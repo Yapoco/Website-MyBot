@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: #333; /* Gris oscuro de fondo */
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -37,13 +37,13 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: #FF5A5F;
+    background-color: #1E2A47; /* Azul oscuro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header .logo {
     font-size: 32px;
-    color: #fff;
+    color: #00B249; /* Verde brillante */
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -62,13 +62,13 @@ nav ul li a {
     font-size: 16px;
     padding: 10px 20px;
     color: white;
-    background-color: #00B249;
+    background-color: #00B249; /* Verde brillante */
     border-radius: 5px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #007C33;
+    background-color: #007C33; /* Verde más oscuro */
     transform: scale(1.1);
 }
 
@@ -83,13 +83,13 @@ main {
 .section {
     padding: 30px;
     margin: 20px 0;
-    background-color: #f4f4f4;
+    background-color: #444; /* Gris oscuro claro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #FF5A5F;
+    color: #00B249; /* Verde brillante */
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
@@ -106,7 +106,7 @@ ul li {
 }
 
 ul li a {
-    color: #FF5A5F;
+    color: #00B249; /* Verde brillante */
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
@@ -118,7 +118,7 @@ ul li a:hover {
 
 button, .button {
     padding: 12px 24px;
-    background-color: #FF5A5F;
+    background-color: #00B249; /* Verde brillante */
     border: none;
     color: #fff;
     cursor: pointer;
@@ -129,7 +129,7 @@ button, .button {
 }
 
 button:hover, .button:hover {
-    background-color: #FF3D47;
+    background-color: #007C33; /* Verde más oscuro */
     transform: scale(1.1);
 }
 
@@ -137,14 +137,14 @@ button:hover, .button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid #FF5A5F;
+    border-bottom: 2px solid #00B249; /* Verde brillante */
     padding-bottom: 20px;
 }
 
 .faq-circle {
     width: 40px;
     height: 40px;
-    background-color: #FF5A5F;
+    background-color: #00B249; /* Verde brillante */
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -155,18 +155,18 @@ button:hover, .button:hover {
 
 .faq-text h3 {
     font-size: 24px;
-    color: #FF5A5F;
+    color: #00B249; /* Verde brillante */
     margin-bottom: 10px;
 }
 
 .faq-text p {
     font-size: 18px;
-    color: #333;
+    color: #fff;
 }
 
 /* Estilos de fondo estilo cartoon */
 body {
-    background: linear-gradient(135deg, #F9D423, #FF4E50);
+    background: linear-gradient(135deg, #2C3E50, #1ABC9C); /* Azul oscuro y verde */
     background-size: cover;
     color: #fff;
 }
@@ -179,7 +179,7 @@ section {
 
 button, a {
     padding: 10px 20px;
-    background-color: #FF5A5F;
+    background-color: #00B249; /* Verde brillante */
     border: none;
     color: white;
     border-radius: 5px;
@@ -188,6 +188,6 @@ button, a {
 }
 
 button:hover, a:hover {
-    background-color: #FF3D47;
+    background-color: #007C33; /* Verde más oscuro */
     transform: scale(1.1);
 }
