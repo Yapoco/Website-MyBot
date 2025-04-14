@@ -1,98 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Bienvenido a MyBot!</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página oficial del bot MyBotLifeNiceFree">
+  <title>MyBotLifeNiceFree</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="MyBot Logo">
-            <h1>MyBot</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="nav-link" data-section="home">Inicio</a></li>
-                <li><a href="#features" class="nav-link" data-section="features">Características</a></li>
-                <li><a href="#invite" class="nav-link" data-section="invite">Invitar</a></li>
-                <li><a href="#gallery" class="nav-link" data-section="gallery">Galería</a></li>
-                <li><a href="#faq" class="nav-link" data-section="faq">FAQ</a></li>
-                <li><a href="#contact" class="nav-link" data-section="contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>MyBotLifeNiceFree</h1>
+    <p>¡Un bot increíble para mejorar tu experiencia en Discord!</p>
+  </header>
 
-    <!-- Main Sections -->
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <h2>¡Bienvenido a MyBot!</h2>
-            <p>Descubre un bot único para tu servidor de Discord. ¡Llena tu servidor de diversión y utilidad!</p>
-            <button class="cta-button">Aprender Más</button>
-        </section>
+  <main>
+    <div class="button-container">
+      <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" class="btn invite-btn">Invitar al Bot</a>
+      <a href="#commands" class="btn commands-btn">Comandos</a>
+      <a href="#help" class="btn help-btn">Ayuda</a>
+    </div>
+    <section id="terms">
+      <h2>Términos y Políticas de Privacidad</h2>
+      <p>
+        Bienvenido a MyBotLifeNiceFree. Al usar este bot, aceptas los términos de uso y nuestra política de privacidad. 
+        Este bot no almacena datos personales sin tu consentimiento, y toda la información procesada es para mejorar tu experiencia en Discord. 
+        Si tienes preguntas o inquietudes sobre cómo manejamos tu información, no dudes en contactarnos.
+        [Agrega más texto aquí para completar los 1000 caracteres].
+      </p>
+    </section>
+  </main>
 
-        <!-- Features Section -->
-        <section id="features" class="section hidden">
-            <h2>Características</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <img src="moderation.png" alt="Moderación">
-                    <h3>Moderación</h3>
-                    <p>Mantén tu servidor seguro con herramientas avanzadas de moderación.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="fun.png" alt="Diversión">
-                    <h3>Diversión</h3>
-                    <p>Agrega juegos, memes y actividades para mantener a todos entretenidos.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="customization.png" alt="Personalización">
-                    <h3>Personalización</h3>
-                    <p>Configura comandos y respuestas personalizadas para tu servidor.</p>
-                </div>
-            </div>
-        </section>
+  <footer>
+    <p>© 2025 MyBotLifeNiceFree. Todos los derechos reservados.</p>
+  </footer>
 
-        <!-- Invite Section -->
-        <section id="invite" class="section hidden">
-            <h2>Invita a MyBot</h2>
-            <p>¡Haz clic en el botón de abajo para agregar MyBot a tu servidor de Discord!</p>
-            <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584&scope=bot&permissions=8" class="cta-button">Invitar Ahora</a>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="section hidden">
-            <h2>Galería</h2>
-            <div class="gallery-grid">
-                <img src="screenshot1.png" alt="Captura 1">
-                <img src="screenshot2.png" alt="Captura 2">
-                <img src="screenshot3.png" alt="Captura 3">
-                <img src="screenshot4.png" alt="Captura 4">
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="section hidden">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="faq-item">
-                <h3>¿Qué hace MyBot?</h3>
-                <p>MyBot ofrece herramientas de moderación, diversión y personalización para tu servidor de Discord.</p>
-            </div>
-            <div class="faq-item">
-                <h3>¿Es gratis?</h3>
-                <p>¡Sí! MyBot es completamente gratuito para usar.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section hidden">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes dudas o sugerencias? Escríbenos a <a href="mailto:soporte@mybot.com">soporte@mybot.com</a>.</p>
-        </section>
-    </main>
+  <script src="script.js"></script>
 </body>
 </html>
