@@ -10,7 +10,7 @@ body {
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
     flex-direction: column;
     position: relative;
@@ -32,6 +32,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header .logo {
@@ -67,7 +71,7 @@ button:hover, .button:hover {
 }
 
 section {
-    margin-top: 60px;
+    margin-top: 120px; /* Espacio para que no se cubra por el header fijo */
     text-align: center;
 }
 
@@ -114,6 +118,14 @@ a:hover {
 .faq-text p {
     font-size: 16px;
     color: #ccc;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 /* Estilos de los modales */
