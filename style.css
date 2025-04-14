@@ -1,4 +1,4 @@
-/* Estilo global */
+/* Reset de estilo básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +7,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #333;
+    background-color: #181818;
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     flex-direction: column;
     overflow-x: hidden;
     position: relative;
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 header {
@@ -33,11 +24,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #20232a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #1E2A47;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
@@ -58,19 +49,19 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
     padding: 10px 20px;
-    color: white;
-    background-color: #00B249;
+    color: #fff;
+    background-color: #00b249;
     border-radius: 8px;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #007C33;
+    background-color: #007c33;
     transform: scale(1.1);
 }
 
 main {
-    margin-top: 80px;
+    margin-top: 100px;
     width: 100%;
     max-width: 1000px;
     padding: 15px;
@@ -80,13 +71,13 @@ main {
 .section {
     padding: 25px;
     margin: 15px 0;
-    background-color: #444;
+    background-color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #00B249;
+h2, h1 {
+    color: #00b249;
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
@@ -103,7 +94,7 @@ ul li {
 
 button, .button {
     padding: 12px 25px;
-    background-color: #00B249;
+    background-color: #00b249;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -114,22 +105,26 @@ button, .button {
 }
 
 button:hover, .button:hover {
-    background-color: #007C33;
+    background-color: #007c33;
     transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
 }
 
 .faq-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid #00B249;
+    border-bottom: 2px solid #00b249;
     padding-bottom: 15px;
 }
 
 .faq-circle {
     width: 40px;
     height: 40px;
-    background-color: #00B249;
+    background-color: #00b249;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -140,7 +135,7 @@ button:hover, .button:hover {
 
 .faq-text h3 {
     font-size: 22px;
-    color: #00B249;
+    color: #00b249;
     margin-bottom: 10px;
 }
 
