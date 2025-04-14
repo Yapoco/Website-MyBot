@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página oficial del bot MyBotLifeNiceFree">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MyBotLifeNiceFree</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>MyBotLifeNiceFree</h1>
-    <p>¡Un bot increíble para mejorar tu experiencia en Discord!</p>
+    <div class="left-section">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo_new.svg" alt="Discord Logo" class="discord-logo" />
+      <span class="bot-name">MyBotLifeNiceFree</span>
+    </div>
+    <nav>
+      <a href="#commands" class="nav-button">Comandos</a>
+    </nav>
   </header>
 
   <main>
-    <div class="button-container">
-      <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" class="btn invite-btn">Invitar al Bot</a>
-      <a href="#commands" class="btn commands-btn">Comandos</a>
-      <a href="#help" class="btn help-btn">Ayuda</a>
+    <div class="hero">
+      <h1>Tu bot de moderación y sugerencias de canales con logs de hilos</h1>
+      <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" class="invite-button">Invitar Bot</a>
     </div>
-    <section id="terms">
-      <h2>Términos y Políticas de Privacidad</h2>
-      <p>
-        Bienvenido a MyBotLifeNiceFree. Al usar este bot, aceptas los términos de uso y nuestra política de privacidad. 
-        Este bot no almacena datos personales sin tu consentimiento, y toda la información procesada es para mejorar tu experiencia en Discord. 
-        Si tienes preguntas o inquietudes sobre cómo manejamos tu información, no dudes en contactarnos.
-        [Agrega más texto aquí para completar los 1000 caracteres].
-      </p>
-    </section>
   </main>
 
+  <section id="commands" class="commands-section">
+    <h2>Comandos del Bot</h2>
+    <ul>
+      <li>/help - Muestra todos los comandos disponibles</li>
+      <li>/ping - Verifica la latencia del bot</li>
+      <li>/mcommandshelp - Ayuda para las variables de embeds de logs de hilos</li>
+      <li>?sugerir - Se crea una sugerencia</li>
+    </ul>
+  </section>
+
   <footer>
-    <p>© 2025 MyBotLifeNiceFree. Todos los derechos reservados.</p>
+    <a href="https://github.com/tuusuario/terminos-de-servicio" target="_blank">Términos de Servicio</a>
+    <a href="https://github.com/tuusuario/politica-de-privacidad" target="_blank">Política de Privacidad</a>
   </footer>
 
   <script src="script.js"></script>
