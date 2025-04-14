@@ -1,4 +1,4 @@
-// Inicialización de Partículas
+// Inicialización de Partículas - Fondo estilo cartoon
 particlesJS('particles-js', {
     "particles": {
         "number": {
@@ -9,13 +9,13 @@ particlesJS('particles-js', {
             }
         },
         "color": {
-            "value": "#00B249"
+            "value": "#FF5A5F"
         },
         "shape": {
             "type": "circle",
             "stroke": {
                 "width": 0,
-                "color": "#000000"
+                "color": "#FF5A5F"
             }
         },
         "opacity": {
@@ -41,7 +41,7 @@ particlesJS('particles-js', {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#00B249",
+            "color": "#FF5A5F",
             "opacity": 0.4,
             "width": 1
         },
