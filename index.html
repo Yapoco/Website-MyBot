@@ -12,10 +12,12 @@
     <div id="particles-js"></div> <!-- Contenedor para las partículas -->
 
     <header>
-        <div class="logo">MyBotLifeNiceFree</div>
+        <div class="logo" id="logo">MyBotLifeNiceFree</div>
         <nav>
             <ul>
-                <li><a href="#" class="button" id="invite">Invitar el Bot</a></li>
+                <li><a href="#commands-section" class="button">Comandos</a></li>
+                <li><a href="#settings-section" class="button">Ajustes</a></li>
+                <li><a href="#faq" class="button">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
     </header>
@@ -27,15 +29,42 @@
             <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank" class="button">Invitar Bot</a>
         </div>
 
-        <div id="settings-section" class="section">
-            <h2>Ajustes</h2>
+        <!-- Comandos -->
+        <div id="commands-section" class="section">
+            <h2>Comandos del Bot</h2>
+            <p>Estos son algunos de los comandos disponibles para MyBotLifeNiceFree:</p>
             <ul>
-                <li><a href="#" id="terms-link">Términos de Servicio</a></li>
-                <li><a href="#" id="privacy-link">Política de Privacidad</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li>?mbuy &lt;id&gt; - Comprar un ítem</li>
+                <li>?minventory - Ver tu inventario</li>
+                <li>?mbalance - Ver tu saldo</li>
+                <li>?mgive &lt;@usuario&gt; &lt;cantidad&gt; - Transferir dinero</li>
             </ul>
         </div>
 
+        <!-- Ajustes -->
+        <div id="settings-section" class="section">
+            <h2>Ajustes</h2>
+            <ul>
+                <li><a href="#terms" class="button">Términos de Servicio</a></li>
+                <li><a href="#privacy" class="button">Política de Privacidad</a></li>
+            </ul>
+        </div>
+
+        <!-- Términos de Servicio -->
+        <div id="terms" class="section">
+            <h2>Términos de Servicio</h2>
+            <p>Estos son los términos de servicio de MyBotLifeNiceFree...</p>
+            <p>Aquí puedes agregar todo el contenido detallado de los términos de servicio.</p>
+        </div>
+
+        <!-- Política de Privacidad -->
+        <div id="privacy" class="section">
+            <h2>Política de Privacidad</h2>
+            <p>Esta es la política de privacidad de MyBotLifeNiceFree...</p>
+            <p>Aquí puedes agregar todo el contenido detallado de la política de privacidad.</p>
+        </div>
+
+        <!-- Preguntas Frecuentes -->
         <div id="faq" class="section">
             <h2>Preguntas Frecuentes</h2>
             <div class="faq-item">
@@ -68,25 +97,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Modales para Términos de Servicio y Política de Privacidad -->
-    <div id="terms-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="close-terms">&times;</span>
-            <h2>Términos de Servicio</h2>
-            <p>Estos son los términos de servicio de MyBotLifeNiceFree...</p>
-            <!-- Agrega el contenido que desees aquí -->
-        </div>
-    </div>
-
-    <div id="privacy-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="close-privacy">&times;</span>
-            <h2>Política de Privacidad</h2>
-            <p>Esta es la política de privacidad de MyBotLifeNiceFree...</p>
-            <!-- Agrega el contenido que desees aquí -->
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
