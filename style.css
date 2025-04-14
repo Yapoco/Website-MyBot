@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -71,4 +70,34 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.faq-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.faq-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.faq-text h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #00ff00;
+}
+
+.faq-text p {
+    font-size: 14px;
+    color: #ccc;
 }
