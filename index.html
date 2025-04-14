@@ -3,47 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de MiBotLifeNiceFree</title>
+    <title>MyBotLifeNiceFree</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Encabezado -->
     <header>
-        <h1>MyBotLifeNiceFree</h1>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Discord_Logo_2021.svg" alt="Logo Discord">
+            <h1>MyBotLifeNiceFree</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#comandos" id="comandos-toggle">Comandos</a>
-                    <ul id="comandos-list">
-                        <li><a href="#comando1">Comando 1</a></li>
-                        <li><a href="#comando2">Comando 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#ajustes" id="ajustes-toggle">Ajustes</a>
-                    <ul id="ajustes-list">
-                        <li><a href="#ajuste1">Ajuste 1</a></li>
-                        <li><a href="#ajuste2">Ajuste 2</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <a href="#" id="comandos-btn" class="nav-btn">Comandos</a>
+            <a href="#" id="ajustes-btn" class="nav-btn">Ajustes</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank" class="nav-btn">Invitar al bot</a>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Bienvenido a la Página de MyBotLifeNiceFree</h2>
-        <p>Explora las opciones del bot y sus configuraciones.</p>
-    </section>
-    
-    <section id="comandos">
-        <h2>Comandos</h2>
-        <p>Aquí van los comandos disponibles para interactuar con el bot.</p>
-    </section>
-    
-    <section id="ajustes">
-        <h2>Ajustes</h2>
-        <p>Aquí puedes configurar las opciones del bot.</p>
-    </section>
+    <!-- Contenedor de contenido -->
+    <div id="contenido">
+        <section id="bienvenida" class="section">
+            <h2>Bienvenido a MyBotLifeNiceFree</h2>
+            <p>Este es tu bot de Discord para gestionar comandos personalizados y más...</p>
+        </section>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Fondo de círculos animados -->
+    <div class="circulos"></div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
