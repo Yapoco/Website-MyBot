@@ -4,67 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBotLifeNiceFree</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+
+    <!-- Header -->
     <header>
-        <div class="logo">MyBotLifeNiceFree</div>
+        <div class="logo">
+            <img src="logo.png" alt="MyBotLifeNiceFree Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="#" class="button" id="invite">Invitar el Bot</a></li>
+                <li><a href="#invite" class="button">Invitar Bot</a></li>
+                <li><a href="#commands" class="button">Comandos</a></li>
+                <li><a href="#faq" class="button">FAQ</a></li>
+                <li><a href="#privacy" class="button">Política de Privacidad</a></li>
+                <li><a href="#terms" class="button">Términos de Servicio</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="content">
-        <div id="invite-section" class="section">
-            <h2>Invitar el Bot</h2>
-            <p>Invita a MyBotLifeNiceFree a tu servidor de Discord con este enlace:</p>
-            <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank">Invitar Bot</a>
-        </div>
+    <!-- Main Section -->
+    <main>
+        <!-- Invite Button Section -->
+        <section id="invite" class="section">
+            <h2>Invita a MyBotLifeNiceFree</h2>
+            <p>Haz clic en el botón para agregar el bot a tu servidor.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584&scope=bot&permissions=8" class="button">Invitar Bot</a>
+        </section>
 
-        <div id="settings-section" class="section">
-            <h2>Ajustes</h2>
+        <!-- Comandos Section -->
+        <section id="commands" class="section">
+            <h2>Comandos del Bot</h2>
             <ul>
-                <li><a href="https://www.ejemplo.com/terminos-de-servicio" target="_blank">Términos de Servicio</a></li>
-                <li><a href="https://www.ejemplo.com/politica-de-privacidad" target="_blank">Política de Privacidad</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><strong>/ping</strong>: Ver el estado del bot.</li>
+                <li><strong>/help</strong>: Obtener ayuda con los comandos.</li>
+                <li><strong>/mcommandshelp</strong>: Ver los comandos relacionados con el sistema de economía.</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="faq" class="section">
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
             <h2>Preguntas Frecuentes</h2>
             <div class="faq-item">
                 <div class="faq-circle"></div>
                 <div class="faq-text">
-                    <h3>¿Qué hace MyBotLifeNiceFree?</h3>
-                    <p>MyBotLifeNiceFree es un bot de moderación para servidores de Discord. Te permite gestionar roles, muteos y baneos, así como registrar logs de los hilos y sugerir nuevos canales para mejorar tu comunidad.</p>
+                    <h3>¿Qué es este bot?</h3>
+                    <p>MyBotLifeNiceFree es un bot de moderación, logs de hilos y sugerencias de canales en tu servidor de Discord.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-circle"></div>
-                <div class="faq-text">
-                    <h3>¿Cómo puedo invitar a MyBotLifeNiceFree?</h3>
-                    <p>Para invitar a MyBotLifeNiceFree a tu servidor, simplemente haz clic en el botón "Invitar el Bot" y sigue las instrucciones.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-circle"></div>
-                <div class="faq-text">
-                    <h3>¿Cómo funciona el sistema de logs de hilos?</h3>
-                    <p>MyBotLifeNiceFree tiene la capacidad de registrar automáticamente los logs de los hilos de tu servidor, permitiéndote tener un historial detallado de todas las actividades que ocurren en ellos.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-circle"></div>
-                <div class="faq-text">
-                    <h3>¿Qué hace el sistema de sugerencias de canales?</h3>
-                    <p>El sistema de sugerencias de canales te permite crear recomendaciones de nuevos canales que pueden ser útiles para tu servidor, mejorando la organización y participación de la comunidad.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Privacy Section -->
+        <section id="privacy" class="section">
+            <h2>Política de Privacidad</h2>
+            <p>Aquí va el texto de la política de privacidad...</p>
+        </section>
+
+        <!-- Terms Section -->
+        <section id="terms" class="section">
+            <h2>Términos de Servicio</h2>
+            <p>Aquí va el texto de los términos de servicio...</p>
+        </section>
+    </main>
+
+    <script src="particles.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
