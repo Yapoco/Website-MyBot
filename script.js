@@ -1,9 +1,4 @@
-document.getElementById('invite').addEventListener('click', () => {
-    document.getElementById('invite-section').style.display = 'block';
-    document.getElementById('settings-section').style.display = 'none';
-});
-
-// Inicializar particles.js
+// Inicialización de Partículas
 particlesJS('particles-js', {
     "particles": {
         "number": {
