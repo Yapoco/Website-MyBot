@@ -1,65 +1,44 @@
+let animationActive = true;
 
+function navigateTo(page) {
+  animationActive = false;
+  document.querySelectorAll(".page").forEach(p => p.classList.add("hidden"));
+  document.getElementById(page + "Page").classList.remove("hidden");
+}
+
+document.getElementById("homeBtn").addEventListener("click", () => {
+  document.querySelectorAll(".page").forEach(p => p.classList.add("hidden"));
+  document.getElementById("homePage").classList.remove("hidden");
+  animationActive = true;
+});
+
+// Fondo animado
 const canvas = document.getElementById('background-circles');
 const ctx = canvas.getContext('2d');
-let width, height;
-let circles = [];
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-function resizeCanvas() {
-  width = canvas.width = window.innerWidth;
-  height = canvas.height = window.innerHeight;
-}
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
-
-for (let i = 0; i < 50; i++) {
-  circles.push({
-    x: Math.random() * width,
-    y: Math.random() * height,
-    radius: Math.random() * 20 + 5,
-    speedX: (Math.random() - 0.5) * 0.5,
-    speedY: (Math.random() - 0.5) * 0.5,
-    alpha: 0.7
-  });
-}
+let circles = Array.from({length: 50}, () => ({
+  x: Math.random() * canvas.width,
+  y: Math.random() * canvas.height,
+  r: Math.random() * 20 + 10,
+  dx: (Math.random() - 0.5) * 0.5,
+  dy: (Math.random() - 0.5) * 0.5
+}));
 
 function drawCircles() {
-  ctx.clearRect(0, 0, width, height);
-  for (let circle of circles) {
+  if (!animationActive) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let c of circles) {
     ctx.beginPath();
-    ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
-    ctx.fillStyle = `rgba(76, 175, 80, ${circle.alpha})`;
+    ctx.arc(c.x, c.y, c.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(0,255,0,0.7)";
     ctx.fill();
-    circle.x += circle.speedX;
-    circle.y += circle.speedY;
-    if (circle.x < 0 || circle.x > width) circle.speedX *= -1;
-    if (circle.y < 0 || circle.y > height) circle.speedY *= -1;
+    c.x += c.dx;
+    c.y += c.dy;
+    if (c.x + c.r > canvas.width || c.x - c.r < 0) c.dx *= -1;
+    if (c.y + c.r > canvas.height || c.y - c.r < 0) c.dy *= -1;
   }
+  requestAnimationFrame(drawCircles);
 }
-
-let animationActive = true;
-function animate() {
-  if (animationActive) drawCircles();
-  requestAnimationFrame(animate);
-}
-animate();
-
-document.addEventListener('scroll', () => animationActive = false);
-document.getElementById('commandsBtn').addEventListener('click', () => animationActive = false);
-document.getElementById('settingsBtn').addEventListener('click', () => animationActive = false);
-document.getElementById('inviteSmall').addEventListener('click', () => animationActive = false);
-document.querySelector('.logo').addEventListener('click', () => animationActive = true);
-
-const commandsSection = document.getElementById("commands");
-const settingsSection = document.getElementById("settings");
-
-document.getElementById("commandsBtn").addEventListener("click", () => {
-  animationActive = false;
-  settingsSection.classList.add("hidden");
-  commandsSection.classList.toggle("hidden");
-});
-
-document.getElementById("settingsBtn").addEventListener("click", () => {
-  animationActive = false;
-  commandsSection.classList.add("hidden");
-  settingsSection.classList.toggle("hidden");
-});
+drawCircles();
