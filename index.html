@@ -5,67 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBotLifeNiceFree</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Agregar particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="particles-js"></div> <!-- Contenedor para las partículas -->
+    <div id="particles-js"></div> <!-- Partículas de fondo -->
 
     <header>
         <div class="logo" id="logo">MyBotLifeNiceFree</div>
         <nav>
             <ul>
+                <li><a href="#invite-section" class="button">Invitar Bot</a></li>
                 <li><a href="#commands-section" class="button">Comandos</a></li>
                 <li><a href="#settings-section" class="button">Ajustes</a></li>
-                <li><a href="#faq" class="button">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="content">
-        <div id="invite-section" class="section">
+    <main>
+        <section id="invite-section" class="section">
             <h2>Invitar el Bot</h2>
             <p>Invita a MyBotLifeNiceFree a tu servidor de Discord con este enlace:</p>
             <a href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank" class="button">Invitar Bot</a>
-        </div>
+        </section>
 
-        <!-- Comandos -->
-        <div id="commands-section" class="section">
+        <section id="commands-section" class="section">
             <h2>Comandos del Bot</h2>
-            <p>Estos son algunos de los comandos disponibles para MyBotLifeNiceFree:</p>
             <ul>
                 <li>?mbuy &lt;id&gt; - Comprar un ítem</li>
                 <li>?minventory - Ver tu inventario</li>
                 <li>?mbalance - Ver tu saldo</li>
                 <li>?mgive &lt;@usuario&gt; &lt;cantidad&gt; - Transferir dinero</li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Ajustes -->
-        <div id="settings-section" class="section">
+        <section id="settings-section" class="section">
             <h2>Ajustes</h2>
             <ul>
                 <li><a href="#terms" class="button">Términos de Servicio</a></li>
                 <li><a href="#privacy" class="button">Política de Privacidad</a></li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Términos de Servicio -->
-        <div id="terms" class="section">
+        <section id="terms" class="section">
             <h2>Términos de Servicio</h2>
             <p>Estos son los términos de servicio de MyBotLifeNiceFree...</p>
             <p>Aquí puedes agregar todo el contenido detallado de los términos de servicio.</p>
-        </div>
+        </section>
 
-        <!-- Política de Privacidad -->
-        <div id="privacy" class="section">
+        <section id="privacy" class="section">
             <h2>Política de Privacidad</h2>
             <p>Esta es la política de privacidad de MyBotLifeNiceFree...</p>
             <p>Aquí puedes agregar todo el contenido detallado de la política de privacidad.</p>
-        </div>
+        </section>
 
-        <!-- Preguntas Frecuentes -->
-        <div id="faq" class="section">
+        <section id="faq" class="section">
             <h2>Preguntas Frecuentes</h2>
             <div class="faq-item">
                 <div class="faq-circle"></div>
@@ -81,22 +74,8 @@
                     <p>Para invitar a MyBotLifeNiceFree a tu servidor, simplemente haz clic en el botón "Invitar el Bot" y sigue las instrucciones.</p>
                 </div>
             </div>
-            <div class="faq-item">
-                <div class="faq-circle"></div>
-                <div class="faq-text">
-                    <h3>¿Cómo funciona el sistema de logs de hilos?</h3>
-                    <p>MyBotLifeNiceFree tiene la capacidad de registrar automáticamente los logs de los hilos de tu servidor, permitiéndote tener un historial detallado de todas las actividades que ocurren en ellos.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-circle"></div>
-                <div class="faq-text">
-                    <h3>¿Qué hace el sistema de sugerencias de canales?</h3>
-                    <p>El sistema de sugerencias de canales te permite crear recomendaciones de nuevos canales que pueden ser útiles para tu servidor, mejorando la organización y participación de la comunidad.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
