@@ -9,13 +9,13 @@ particlesJS('particles-js', {
             }
         },
         "color": {
-            "value": "#FF5A5F"
+            "value": "#00B249" /* Verde brillante */
         },
         "shape": {
             "type": "circle",
             "stroke": {
                 "width": 0,
-                "color": "#FF5A5F"
+                "color": "#00B249" /* Verde brillante */
             }
         },
         "opacity": {
@@ -41,7 +41,7 @@ particlesJS('particles-js', {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#FF5A5F",
+            "color": "#00B249", /* Verde brillante */
             "opacity": 0.4,
             "width": 1
         },
