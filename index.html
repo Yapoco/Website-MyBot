@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MyBotLifeNiceFree</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
@@ -10,29 +10,32 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <div class="logo" id="homeBtn">
       <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo">
       <h1 class="title-animate">MyBotLifeNiceFree</h1>
     </div>
     <nav>
-      <button id="commandsBtn">Comandos</button>
-      <button id="inviteSmall" onclick="window.open('https://discord.com/oauth2/authorize?client_id=1355394034494869584','_blank')">Invitar Bot</button>
-      <button id="settingsBtn">Ajustes</button>
+      <button onclick="navigateTo('commands')">Comandos</button>
+      <button onclick="window.open('https://discord.com/oauth2/authorize?client_id=1355394034494869584','_blank')" id="inviteSmall">Invitar Bot</button>
+      <button onclick="navigateTo('settings')">Ajustes</button>
     </nav>
   </header>
 
   <main>
     <canvas id="background-circles"></canvas>
-    <section class="intro">
-      <h2>Bienvenido a <span class="glow">MyBotLifeNiceFree</span></h2>
-      <p>El bot de moderación y registros más confiable y completo de habla hispana.</p>
-      <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank">
-        <img class="discord-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" />
-        Invitar Bot
-      </a>
+
+    <section id="homePage" class="page">
+      <div class="intro">
+        <h2>Bienvenido a <span class="glow">MyBotLifeNiceFree</span></h2>
+        <p>El bot de moderación y registros más confiable y completo de habla hispana.</p>
+        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank">
+          <img class="discord-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" />
+          Invitar Bot
+        </a>
+      </div>
     </section>
 
-    <section id="commands" class="hidden">
+    <section id="commandsPage" class="page hidden">
       <h2>Comandos</h2>
       <ul>
         <li><strong>Moderación:</strong> /ban, /kick, /mute...</li>
@@ -41,7 +44,7 @@
       </ul>
     </section>
 
-    <section id="settings" class="hidden">
+    <section id="settingsPage" class="page hidden">
       <h2>Ajustes</h2>
       <ul>
         <li><strong>Política de privacidad:</strong> Este bot recopila y utiliza datos mínimos necesarios para su funcionamiento. No compartimos tu información con terceros. Puedes eliminar tus datos contactando al equipo de soporte.</li>
