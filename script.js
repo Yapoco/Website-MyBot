@@ -87,3 +87,21 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
 });
+
+// Mostrar los modales
+document.getElementById('terms-link').addEventListener('click', () => {
+    document.getElementById('terms-modal').style.display = 'block';
+});
+
+document.getElementById('privacy-link').addEventListener('click', () => {
+    document.getElementById('privacy-modal').style.display = 'block';
+});
+
+// Cerrar los modales
+document.getElementById('close-terms').addEventListener('click', () => {
+    document.getElementById('terms-modal').style.display = 'none';
+});
+
+document.getElementById('close-privacy').addEventListener('click', () => {
+    document.getElementById('privacy-modal').style.display = 'none';
+});
