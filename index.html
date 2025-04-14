@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MyBotLifeNiceFree</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968756.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de MiBotLifeNiceFree</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo" id="homeBtn">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo">
-      <h1 class="title-animate">MyBotLifeNiceFree</h1>
-    </div>
-    <nav>
-      <button onclick="navigateTo('commands')">Comandos</button>
-      <button onclick="window.open('https://discord.com/oauth2/authorize?client_id=1355394034494869584','_blank')" id="inviteSmall">Invitar Bot</button>
-      <button onclick="navigateTo('settings')">Ajustes</button>
-    </nav>
-  </header>
 
-  <main>
-    <canvas id="background-circles"></canvas>
+    <header>
+        <h1>MyBotLifeNiceFree</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#comandos" id="comandos-toggle">Comandos</a>
+                    <ul id="comandos-list">
+                        <li><a href="#comando1">Comando 1</a></li>
+                        <li><a href="#comando2">Comando 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ajustes" id="ajustes-toggle">Ajustes</a>
+                    <ul id="ajustes-list">
+                        <li><a href="#ajuste1">Ajuste 1</a></li>
+                        <li><a href="#ajuste2">Ajuste 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="homePage" class="page">
-      <div class="intro">
-        <h2>Bienvenido a <span class="glow">MyBotLifeNiceFree</span></h2>
-        <p>El bot de moderación y registros más confiable y completo de habla hispana.</p>
-        <a class="invite-btn" href="https://discord.com/oauth2/authorize?client_id=1355394034494869584" target="_blank">
-          <img class="discord-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" />
-          Invitar Bot
-        </a>
-      </div>
+    <section id="home">
+        <h2>Bienvenido a la Página de MyBotLifeNiceFree</h2>
+        <p>Explora las opciones del bot y sus configuraciones.</p>
+    </section>
+    
+    <section id="comandos">
+        <h2>Comandos</h2>
+        <p>Aquí van los comandos disponibles para interactuar con el bot.</p>
+    </section>
+    
+    <section id="ajustes">
+        <h2>Ajustes</h2>
+        <p>Aquí puedes configurar las opciones del bot.</p>
     </section>
 
-    <section id="commandsPage" class="page hidden">
-      <h2>Comandos</h2>
-      <ul>
-        <li><strong>Moderación:</strong> /ban, /kick, /mute...</li>
-        <li><strong>Registros de moderación:</strong> /logs, /warns...</li>
-        <li><strong>Utilidades:</strong> /ping, /help...</li>
-      </ul>
-    </section>
-
-    <section id="settingsPage" class="page hidden">
-      <h2>Ajustes</h2>
-      <ul>
-        <li><strong>Política de privacidad:</strong> Este bot recopila y utiliza datos mínimos necesarios para su funcionamiento. No compartimos tu información con terceros. Puedes eliminar tus datos contactando al equipo de soporte.</li>
-        <li><strong>Términos de servicio:</strong> Al usar el bot aceptas no usarlo con fines maliciosos. Nos reservamos el derecho de suspender su servicio en caso de abuso.</li>
-        <li><strong>Ayuda:</strong> MyBotLifeNiceFree es un bot de moderación y registros. Usa /help para más info o únete al soporte: <a href="https://discord.gg/RYvcnPM32d" target="_blank">Servidor de Soporte</a>.</li>
-        <li><strong>Enviar sugerencias:</strong> Puedes enviar tus sugerencias aquí: <a href="https://discord.gg/RYvcnPM32d" target="_blank">Servidor de Soporte</a>.</li>
-        <li><strong>Preguntas comunes:</strong>
-          <ul>
-            <li><strong>¿Por qué no funciona el bot?</strong> Puede deberse a permisos o errores. Únete al <a href="https://discord.gg/RYvcnPM32d">soporte</a>.</li>
-            <li><strong>¿Es confiable?</strong> Totalmente, además es gratuito. Únete al <a href="https://discord.gg/RYvcnPM32d">servidor</a>.</li>
-            <li><strong>¿Por qué está desconectado?</strong> Podría ser por mantenimiento o cambios técnicos.</li>
-            <li><strong>¿Tendrá más funciones?</strong> Sí, pronto con ayuda de la comunidad.</li>
-            <li><strong>¿Será de pago?</strong> Algunas funciones estéticas sí, pero seguirá siendo mayormente gratis.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 MyBotLifeNiceFree</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
